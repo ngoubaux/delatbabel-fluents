@@ -40,3 +40,16 @@ work.
 
 ## Usage
 
+```
+use Delatbabel\Fluents\Fluents;
+
+class User extends Eloquent {
+    use Fluents;
+}
+
+$myFluent = new Fluent();
+$myFluent->first = 'one';
+
+$myUser = new User();
+$myUser->fill($myFluent);
+```
