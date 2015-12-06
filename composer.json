@@ -1,0 +1,22 @@
+{
+    "name": "delatbabel/fluents",
+    "description": "Convert Eloquent Model objects to and from Fluent objects.",
+    "keywords": ["fluent", "eloquent", "l5", "laravel", "laravel5"],
+    "authors": [
+        {
+            "name": "Del",
+            "email": "del@babel.com.au"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/contracts": "^5.0",
+        "illuminate/support": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Delatbabel\\Fluents\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
