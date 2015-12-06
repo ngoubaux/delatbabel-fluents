@@ -40,6 +40,8 @@ work.
 
 ## Usage
 
+### Model Fill From Fluent Object
+
 ```
 use Delatbabel\Fluents\Fluents;
 
@@ -52,4 +54,17 @@ $myFluent->first = 'one';
 
 $myUser = new User();
 $myUser->fill($myFluent);
+```
+
+### Model Convert From Fluent Object
+
+```
+use Delatbabel\Fluents\Fluents;
+
+class User extends Eloquent {
+    use Fluents;
+}
+
+$myUser = User->find(1);
+$myFluent = User->toFluent();
 ```
