@@ -38,9 +38,9 @@ Note that several other of Laravel's internal classes can also have this trait a
 as long as they store their data in an internal `attributes` array this trait should
 work.
 
-h2. Usage
+## Usage
 
-h3. Model Fill From Fluent Object
+### Model Fill From Fluent Object
 
 ```php
 use Delatbabel\Fluents\Fluents;
@@ -56,7 +56,7 @@ $myUser = new User();
 $myUser->fill($myFluent);
 ```
 
-h3. Model Convert From Fluent Object
+### Model Convert From Fluent Object
 
 ```php
 use Delatbabel\Fluents\Fluents;
