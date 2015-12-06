@@ -42,7 +42,7 @@ work.
 
 ### Model Fill From Fluent Object
 
-```
+```php
 use Delatbabel\Fluents\Fluents;
 
 class User extends Eloquent {
@@ -58,7 +58,7 @@ $myUser->fill($myFluent);
 
 ### Model Convert From Fluent Object
 
-```
+```php
 use Delatbabel\Fluents\Fluents;
 
 class User extends Eloquent {
