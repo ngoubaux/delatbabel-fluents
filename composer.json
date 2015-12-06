@@ -2,6 +2,7 @@
     "name": "delatbabel/fluents",
     "description": "Convert Eloquent Model objects to and from Fluent objects.",
     "keywords": ["fluent", "eloquent", "l5", "laravel", "laravel5"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Del",
