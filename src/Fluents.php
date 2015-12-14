@@ -41,7 +41,7 @@ use Illuminate\Support\Fluent;
  *   $myFluent->first = 'one';
  *
  *   $myUser = new User();
- *   $myUser->fill($myFluent);
+ *   $myUser->fromFluent($myFluent);
  * </code>
  *
  * @link http://laravel.com/api/5.1/Illuminate/Support/Fluent.html
@@ -62,13 +62,18 @@ trait Fluents
     /**
      * Fill the model with attributes from the object or from the array.
      *
+     * We can't override the parent's "fill" method because that's specifically
+     * declared as "fill(array $attributes)" -- which prevents us from overriding
+     * it with a declaration that doesn't type-hint the $attributes object.  That
+     * probably needs to be raised as a bug on Laravel.
+     *
      * @param  mixed  $attributes
      * @return $this
      *
      * @throws \Illuminate\Database\Eloquent\MassAssignmentException
      */
 
-    public function fill($attributes)
+    public function fromFluent($attributes)
     {
         if (is_array($attributes)) {
             return parent::fill($attributes);
