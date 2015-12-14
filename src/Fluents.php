@@ -76,8 +76,8 @@ trait Fluents
     public function fromFluent($attributes)
     {
         if (is_array($attributes)) {
-            return parent::fill($attributes);
+            return $this->fill($attributes);
         }
-        return parent::fill($attributes->toArray());
+        return $this->fill($attributes->toArray());
     }
 }
