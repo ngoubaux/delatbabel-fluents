@@ -53,7 +53,7 @@ $myFluent = new Fluent();
 $myFluent->first = 'one';
 
 $myUser = new User();
-$myUser->fill($myFluent);
+$myUser->fromFluent($myFluent);
 ```
 
 ### Model Convert From Fluent Object
